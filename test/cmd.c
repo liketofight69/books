@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include "mle.h"
+#include "common.h"
 
 #define MLE_MULTI_CURSOR_MARK_FN(pcursor, pfn, ...) do {\
     cursor_t* cursor; \
@@ -631,7 +632,12 @@ int cmd_save(cmd_context_t* ctx) {
     _cmd_save(ctx->editor, ctx->bview, 0);
     return MLE_OK;
 }
+//code in function is just a place holder for now
+int cmd_git(cmd_context_t*ctx){
+     _cmd_save(ctx->editor, ctx->bview, 0);
+    return MLE_OK;
 
+}
 // Open file in a new bview
 int cmd_open_file(cmd_context_t* ctx) {
     char* path;

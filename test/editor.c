@@ -1300,6 +1300,7 @@ static void _editor_register_cmds(editor_t* editor) {
     _editor_register_cmd_fn(editor, "cmd_remove_extra_cursors", cmd_remove_extra_cursors);
     _editor_register_cmd_fn(editor, "cmd_replace", cmd_replace);
     _editor_register_cmd_fn(editor, "cmd_save", cmd_save);
+    _editor_register_cmd_fn(editor, "cmd_git", cmd_git);
     _editor_register_cmd_fn(editor, "cmd_save_as", cmd_save_as);
     _editor_register_cmd_fn(editor, "cmd_search", cmd_search);
     _editor_register_cmd_fn(editor, "cmd_search_next", cmd_search_next);
@@ -1412,6 +1413,7 @@ static void _editor_init_kmaps(editor_t* editor) {
         MLE_KBINDING_DEF("cmd_undo", "C-z"),
         MLE_KBINDING_DEF("cmd_redo", "C-y"),
         MLE_KBINDING_DEF("cmd_save", "C-s"),
+       MLE_KBINDING_DEF("cmd_git","C-g"),
         MLE_KBINDING_DEF("cmd_save_as", "M-s"),
         MLE_KBINDING_DEF_EX("cmd_set_opt", "M-o a", "tab_to_space"),
         MLE_KBINDING_DEF_EX("cmd_set_opt", "M-o t", "tab_width"),

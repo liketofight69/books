@@ -512,6 +512,7 @@ int cmd_remove_extra_cursors(cmd_context_t* ctx);
 int cmd_replace(cmd_context_t* ctx);
 int cmd_save_as(cmd_context_t* ctx);
 int cmd_save(cmd_context_t* ctx);
+int cmd_git(cmd_context_t* ctx);
 int cmd_search(cmd_context_t* ctx);
 int cmd_search_next(cmd_context_t* ctx);
 int cmd_set_opt(cmd_context_t* ctx);
